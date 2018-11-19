@@ -12,15 +12,15 @@ end
   word_array = word.split("")
  if word_array[0].match(/[aAeEiIoOuU]/)
    word_array << "way"
-   word_array.join("")
- elsif
+ else
    until word_array[0].match(/[aAeEiIoOuU]/)
      word_array << word_array[0]
      word_array.shift
    end
    word_array << "ay"
-   puts word_array.join("")
  end
+  word_array.join("")
+  binding.pry
 end
 
 
