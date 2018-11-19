@@ -12,6 +12,7 @@ end
  if word[0].match(/[aAeEiIoOuU]/)
    word << "way"
    word.join("")
+ end
 end
 
 
