@@ -15,7 +15,7 @@ end
    until word[0].match(/[aAeEiIoOuU]/)
      word << word[0]
      word.shift
-     pry
+     binding.pry
    end
      word << "ay"
  end
