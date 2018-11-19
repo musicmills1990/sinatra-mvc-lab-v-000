@@ -12,6 +12,12 @@ end
  if word[0].match(/[aAeEiIoOuU]/)
    word << "way"
    word.join("")
+ elsif
+   until word[0].match(/[aAeEiIoOuU]/)
+     word << word[0]
+     word.shift
+   end
+   word << "ay"
  end
 end
 
