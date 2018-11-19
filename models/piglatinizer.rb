@@ -2,18 +2,20 @@ class PigLatinizer
 
 
 def piglatinize(input_str)
-  input_str.downcase
-  input = input_str.split(",")
-  if input[0] == /[aeiou]/
-    input.push('way')
+  
+end
+
+  def piglatinize_word(word)
+  if word[0].match(/[aAeEiIoOuU]/)
+    word << "way"
   else
-    until input[0] == /[aeiou]/
-      input << input[0]
-      input.shift
+    until word[0].match(/[aAeEiIoOuU]/)
+      word << word[0]
+      word.shift
     end
-      input.push('ay')
+      word << "ay"
   end
-    input.join("")
+    word.join("")
 end
 
 
