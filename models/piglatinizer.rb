@@ -9,7 +9,7 @@ end
 
 
   def piglatinize_word(word)
-  word.split(",")
+    word.to_a
   binding.pry
  if word[0].match(/[aAeEiIoOuU]/)
    word << "way"
