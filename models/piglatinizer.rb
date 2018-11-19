@@ -20,7 +20,6 @@ end
    word_array << "ay"
  end
   pig_word = word_array.join("")
-  puts pig_word
   pig_word
 end
 
