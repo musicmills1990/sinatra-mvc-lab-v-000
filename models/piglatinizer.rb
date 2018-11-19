@@ -17,6 +17,7 @@ end
    until word_array[0].match(/[aAeEiIoOuU]/)
      word_array << word_array[0]
      word_array.shift
+     binding.pry
    end
    word_array << "ay"
    word_array.join("")
