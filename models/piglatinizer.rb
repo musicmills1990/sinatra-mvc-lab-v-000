@@ -9,17 +9,18 @@ end
 
 
   def piglatinize_word(word)
-  word.split(",")
+  word_array = word.split(",")
   binding.pry
- if word[0].match(/[aAeEiIoOuU]/)
-   word << "way"
-   word.join("")
+ if word_array[0].match(/[aAeEiIoOuU]/)
+   word_array << "way"
+   word_array.join("")
  elsif
-   until word[0].match(/[aAeEiIoOuU]/)
-     word << word[0]
-     word.shift
+   until word_array[0].match(/[aAeEiIoOuU]/)
+     word_array << word_array[0]
+     word_array.shift
    end
-   word << "ay"
+   word_array << "ay"
+   word_array.join("")
  end
 end
 
