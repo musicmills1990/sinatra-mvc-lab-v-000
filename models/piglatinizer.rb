@@ -11,7 +11,6 @@ end
   def piglatinize_word(word)
  if word[0].match(/[aAeEiIoOuU]/)
    word << "way"
-   binding.pry
  else
    until word[0].match(/[aAeEiIoOuU]/)
      word << word[0]
@@ -20,6 +19,7 @@ end
      word << "ay"
  end
    word.join("")
+   binding.pry
 end
 
 
