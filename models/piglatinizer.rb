@@ -11,11 +11,10 @@ end
   def piglatinize_word(word)
  if word[0].match(/[aAeEiIoOuU]/)
    word << "way"
- else
+ elsif
    until word[0].match(/[aAeEiIoOuU]/)
      word << word[0]
      word.shift
-     binding.pry
    end
      word << "ay"
  end
